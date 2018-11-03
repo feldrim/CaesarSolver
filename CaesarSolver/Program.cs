@@ -2,7 +2,7 @@
 
 namespace CaesarSolver
 {
-   internal class Program
+   public class Program
    {
       public static void Main()
       {
@@ -10,10 +10,10 @@ namespace CaesarSolver
          const string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
          const string ignoredChars = " .,";
 
-         var cs = new CaesarSolver(charset, ignoredChars);
-         var res = cs.Solve(encryptedText);
-
+         var progressiveCaesarSolver = new ProgressiveCaesarSolver(charset, ignoredChars);
+         var res = progressiveCaesarSolver.SolveDegressive(encryptedText);
          Console.WriteLine(res);
+
          Console.ReadLine();
       }
    }
