@@ -2,7 +2,12 @@
 
 namespace CaesarSolver
 {
-   public class Program
+   /// <summary>
+   ///   This project is a console application to solve Progressive Caesar Cypher.
+   ///   Initially this is created to solve "caesar-returns" problem of Hackistanbul '18 CTF.
+   ///   Some refactoring is done afterwards.
+   /// </summary>
+   public static class Program
    {
       public static void Main()
       {
